@@ -1,51 +1,156 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title></title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style type="text/css">
-        html, body {width:100%;height:100%;} /*非常重要的样式让背景图片100%适应整个屏幕*/
-        .bg {display: table;width: 100%;height: 100%;padding: 100px 0;text-align: center;color: #fff;background: url(http://www.xiandanke.cn/Image/intro-bg.jpg) no-repeat bottom center;background-color: #000;background-size: cover;}
-        .my-navbar {padding:20px 0;transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;}
-        .my-navbar a{background:transparent !important;color:#fff !important}
-        .my-navbar a:hover {color:#45bcf9 !important;background:transparent;outline:0}
-        .my-navbar a {transition: color 0.5s ease-in-out;}/*-webkit-transition ;-moz-transition*/
-        .top-nav {padding:0;background:#000;}
-        button.navbar-toggle {background-color:#fbfbfb;}/*整个背景都是transparent透明的，会看不到，所以再次覆盖一下*/
-        button.navbar-toggle > span.icon-bar {background-color:#dedede}
-    </style>
-</head>
-<body>
-    <nav class="navbar navbar-fixed-top my-navbar" role="navigation">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse"
-                        data-target="#example-navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="#">QiLF's Github</a>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+
+    <title>QiLF's Github</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap-4.1.1-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/album.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="https://home.cnblogs.com/u/QiLF/" class="text-white">Follow on cnblogs</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
             </div>
-            <div class="collapse navbar-collapse" id="example-navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="https://www.cnblogs.com/QiLF/">my cnblog</a></li>
-                    <li><a href="#">SVN</a></li>
-                    <li>
-                        <a href="#">Asp.Net</a>
-                    </li>
-                </ul>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Ever Dream</h4>
+              <p class="text-muted">
+                Ever dream of me</br>
+                Would you do it with me</br>
+                Heal the scars and change the stars</br>
+                Would you do it for me</br>
+                Turn loose the heaven within</br>
+                I'd take you away</br>
+                Castaway on a lonely day</br>
+                Bosom fo a teary cheek</br>
+                My song can but borrow your grace</br>
+                Come out, Come out wherever you are</br>
+                So lost in your sea</br>
+                Give in, give in for my touch</br>
+                For my taste for my lust</br>
+                Your beauty cascaded on me</br>
+                In this white night fantasy</br>
+              </p>
+
             </div>
+          </div>
         </div>
-    </nav>
-     <div class="bg"><img src="img/bg.jpg"></img></div>
-    <script>
-        $(window).scroll(function () {
-            if ($(".navbar").offset().top > 50) {$(".navbar-fixed-top").addClass("top-nav");
-            }else {$(".navbar-fixed-top").removeClass("top-nav");}
-        })</script>
-</body></html>
+      </div>
+      <div class="navbar navbar-dark bg-dark box-shadow">
+        <div class="container d-flex justify-content-between">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <!--
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mr-2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path><circle cx="12" cy="13" r="4"></circle></svg>
+            -->
+            <img src="img/me.jpeg" width="35" height="35">
+            <strong>QiLF</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1 class="jumbotron-heading">Welcome!</h1>
+          <p class="lead text-muted">This is coding beginner QiLF's homepage, just enjoy yourself.</p>
+        <!--
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+        -->
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/cnblog_card.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Welcome to interact with me on cnblog.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='https://home.cnblogs.com/u/QiLF/'">View</button>
+                    </div>
+                    <small class="text-muted">QiLF's blog about coding</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/zhihu_card.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Welcome to interact with me on zhihu.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='https://www.zhihu.com/people/ta-luo-34/activities'">View</button>
+                    </div>
+                    <small class="text-muted">QiLF's zhihu</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <img class="card-img-top" src="img/tap_card.png" alt="Card image cap">
+                <div class="card-body">
+                  <p class="card-text">Welcome to play games with me on taptap.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='https://www.taptap.com/user/8500315'">View</button>
+                    </div>
+                    <small class="text-muted">QiLF's taptap personal center</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="js/popper.min.js"></script>
+    <script src="bootstrap-4.1.1-dist/js/bootstrap.min.js"></script>
+    <script src="js/holder.min.js"></script>
+  </body>
+</html>
