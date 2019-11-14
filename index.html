@@ -826,6 +826,8 @@ img {vertical-align: middle;}
   <span class="dot" onclick="currentSlide(14)"></span>
  <span class="dot" onclick="currentSlide(15)"></span>
 </div>
+Your nick name:<br>
+<input type="text" id="userName" style="margin-left:50%" value="">
 <script>
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -876,7 +878,13 @@ function myFunction() {
     var inputNodes = divNode.getElementsByTagName('input');
     result = result + divName + " " + inputNodes[0].value+"\n"
   }
-  var file = new File([result], "video_prop_yourname.txt", {type: "text/plain;charset=utf-8"});
+  var userName = document.getElementById("userName").value;
+  var myDate = new Date();
+  var fileName = myDate.toLocaleTimeString() + "_video.txt";
+  if(userName != ""){
+    fileName = document.getElementById("userName").value + "_video.txt";
+  }
+  var file = new File([result], fileName, {type: "text/plain;charset=utf-8"});
   saveAs(file);
 }
 </script>
